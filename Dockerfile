@@ -9,7 +9,7 @@ RUN yum -y update && \
     yum clean all
 
 # Copy custom index.html to the Apache default directory (optional)
-COPY index.html /var/www/html/index.html
+COPY index.html /var/www/html/index.html #test
 
 # Set the environment variable to run Apache in the foreground
 ENV FOREGROUND=true
